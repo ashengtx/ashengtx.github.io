@@ -83,70 +83,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new post use-hexo.md</div></pre></td></tr></table></figure>
-<h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><h4 id="安装hexo-server"><a href="#安装hexo-server" class="headerlink" title="安装hexo-server"></a>安装hexo-server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
-<h4 id="启动server"><a href="#启动server" class="headerlink" title="启动server"></a>启动server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>便可以在浏览器中访问<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### 指定端口启动server</div></pre></td></tr></table></figure></p>
-<p>$ hexo server -p 5000<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 生成静态文件</div><div class="line"></div><div class="line">#### 生成静态文件</div></pre></td></tr></table></figure></p>
-<p>$ hexo generate<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### 查看文件变化</div></pre></td></tr></table></figure></p>
-<p>$ hexo generate –watch<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 布署</div><div class="line"></div><div class="line">布署到git</div><div class="line"></div><div class="line">#### 安装git</div></pre></td></tr></table></figure></p>
-<p>$ npm install hexo-deployer-git –save<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### 配置</div><div class="line"></div><div class="line">编辑```_config.yml```文件</div><div class="line">```xml</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/you/you.github.io</div><div class="line">  branch: [branch]</div><div class="line">  message: [message]</div></pre></td></tr></table></figure></p>
-<h4 id="布署"><a href="#布署" class="headerlink" title="布署"></a>布署</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<h4 id="生成布署两步可以合起来"><a href="#生成布署两步可以合起来" class="headerlink" title="生成布署两步可以合起来"></a>生成布署两步可以合起来</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate --deploy</div></pre></td></tr></table></figure>
+        <h3 id="1-新建一篇文章"><a href="#1-新建一篇文章" class="headerlink" title="1 新建一篇文章"></a>1 新建一篇文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new post use-hexo.md</div></pre></td></tr></table></figure>
+<h3 id="2-启动服务器"><a href="#2-启动服务器" class="headerlink" title="2 启动服务器"></a>2 启动服务器</h3><h4 id="2-1-安装hexo-server"><a href="#2-1-安装hexo-server" class="headerlink" title="2.1 安装hexo-server"></a>2.1 安装hexo-server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
+<h4 id="2-2-启动server"><a href="#2-2-启动server" class="headerlink" title="2.2 启动server"></a>2.2 启动server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>便可以在浏览器中访问 ‘<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>‘ 看到自己的博客</p>
+<h4 id="2-3-指定端口启动server"><a href="#2-3-指定端口启动server" class="headerlink" title="2.3 指定端口启动server"></a>2.3 指定端口启动server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -p 5000</div></pre></td></tr></table></figure>
+<p>有时候默认端口访问不了，可以换个端口。如果chrome使用了代理，也会导致本地访问不了，关掉就行了，或者换ie访问也行。</p>
+<h3 id="3-生成静态文件"><a href="#3-生成静态文件" class="headerlink" title="3 生成静态文件"></a>3 生成静态文件</h3><h4 id="3-1-生成静态文件"><a href="#3-1-生成静态文件" class="headerlink" title="3.1 生成静态文件"></a>3.1 生成静态文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h4 id="3-2-查看文件变化"><a href="#3-2-查看文件变化" class="headerlink" title="3.2 查看文件变化"></a>3.2 查看文件变化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate --watch</div></pre></td></tr></table></figure>
+<h3 id="4-布署到git"><a href="#4-布署到git" class="headerlink" title="4 布署到git"></a>4 布署到git</h3><h4 id="4-1-安装git"><a href="#4-1-安装git" class="headerlink" title="4.1 安装git"></a>4.1 安装git</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h4 id="4-2-配置"><a href="#4-2-配置" class="headerlink" title="4.2 配置"></a>4.2 配置</h4><p>编辑 ‘_config.yml’ 文件<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/you/you.github.io</div><div class="line">  branch: [branch]</div><div class="line">  message: [message]</div></pre></td></tr></table></figure></p>
+<h4 id="4-3-布署"><a href="#4-3-布署" class="headerlink" title="4.3 布署"></a>4.3 布署</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h4 id="4-4-生成布署两步可以合起来"><a href="#4-4-生成布署两步可以合起来" class="headerlink" title="4.4 生成布署两步可以合起来"></a>4.4 生成布署两步可以合起来</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate --deploy</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/28/use-hexo/" data-id="cj6w4u49x000150w1sw18by0j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/28/use-hexo/" data-id="cj6w67yp50001dsw1cfgjyole" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/others/">others</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/28/hello-world/" class="article-date">
-  <time datetime="2017-08-28T11:44:36.675Z" itemprop="datePublished">2017-08-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/28/hello-world/" data-id="cj6w4u49r000050w1bm209h9f" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -199,10 +156,6 @@
         
           <li>
             <a href="/2017/08/28/use-hexo/">Use-Hexo</a>
-          </li>
-        
-          <li>
-            <a href="/2017/08/28/hello-world/">Hello World</a>
           </li>
         
       </ul>
